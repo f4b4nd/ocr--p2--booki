@@ -29,6 +29,10 @@ a {
 
 /******/
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 header, main {
     padding: 1em;
 }
@@ -142,17 +146,43 @@ header, main {
 
 }
 
+.container-activity {
+
+    .col {
+        flex-direction: row;
+        flex-basis: 20%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & > .card:first-child {
+            flex-basis: 30%;
+        }
+
+        & > .card:last-child {
+            flex-basis: 60%;
+        }
+    }
+
+    .card {
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
 footer {
 
     display: flex;
     flex-wrap: wrap;
-    
-    padding: 1em 2em;
+    column-gap: 20px;
+
+    padding: 2.5em 2em;
     background-color: $light-grey;
 
     
     .about, .housing, .contact {
-        flex-basis: 33%;
+        flex-basis: 30%;
 
         display: flex; 
         flex-direction: column;
