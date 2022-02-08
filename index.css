@@ -7,6 +7,7 @@
 .card .card-image {
   max-width: 500px;
   max-height: 500px;
+  overflow: hidden;
 }
 
 .card picture, .card img {
