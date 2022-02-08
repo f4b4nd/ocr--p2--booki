@@ -149,21 +149,17 @@ header, main {
 .container-activity {
 
     .cards {
-        column-gap: 20px;
+        justify-content: flex-start;
+        column-gap: 10px;
     }
 
     .col {
-        flex-basis: 20%;
-        height: 400px;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         .card {
-
             flex-direction: column;
-            //height: 200px;
 
             &:only-child {
                 border: 1px solid green;
@@ -238,6 +234,17 @@ footer {
         max-width: 30vw;
     }
 
+    .container-activity {
+
+        .cards {
+            .col {
+                height: 400px;
+                max-width: 300px;
+            }
+        }
+        
+    }
+
 }
 
 /**MEDIUM DEVICES**/
@@ -260,10 +267,24 @@ footer {
         }
     }
 
+    .container-activity {
+
+        .cards {
+
+            .col {
+                flex-basis: 40%;
+            }
+        }
+    }
+
 }
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
+
+    .cards {
+        flex-direction: column;
+    }
 
     .jumbotron {
         flex-direction: column-reverse;
@@ -273,9 +294,35 @@ footer {
         max-width: auto;
     }
 
-    .cards {
-        flex-direction: column;
+
+    .container-activity {
+
+        .cards {
+
+            row-gap: 0;
+
+            .col {
+                display: block;
+                //height: 400px;
+                max-width: 100%;
+            }
+
+            .card {
+                margin-bottom: 10px;
+                height: 200px !important;
+
+                .card__image {
+                    height: 150px !important;
+                }
+
+                .card__body {
+                    height: 50px !important;
+                }
+            }
+        }
+                
     }
+
 
     footer {
         flex-direction: column;
