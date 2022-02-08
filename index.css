@@ -4,7 +4,7 @@
 - medium (tablet) : 768px <= width <= 991px
 - large (computer) : width >= 992px
 */
-.card .card-image {
+.card .card__image {
   max-width: 500px;
   max-height: 500px;
   overflow: hidden;
