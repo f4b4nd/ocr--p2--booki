@@ -5,7 +5,23 @@
 - large (computer) : width >= 992px
 */
 /*****************/
-body {
+/*RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/******/
+header, main {
   padding: 1em;
 }
 
@@ -53,6 +69,8 @@ body {
 .cards .card picture, .cards .card img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fa-star {
@@ -92,6 +110,10 @@ body {
   height: 250px;
 }
 
+.container-housing .card .card__image {
+  height: 200px;
+}
+
 .container-housing .card .card__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +122,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1em;
+  padding: 0.5em;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -147,6 +169,44 @@ body {
 .container-popular .card {
   height: 150px;
   width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em 2em;
+  background-color: #F2F2F2;
+}
+
+footer .about, footer .housing, footer .contact {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+
+footer .about .title, footer .housing .title, footer .contact .title {
+  font-weight: bold;
+}
+
+footer .about .links, footer .housing .links, footer .contact .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
 }
 
 /**LARGE DEVICES**/
@@ -197,6 +257,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 30px;
   }
 }
 /*# sourceMappingURL=index.css.map */
