@@ -57,7 +57,7 @@ header, main {
 
     .card {    
         display: flex;
-        border: 1px solid red;
+        //border: 1px solid red;
         border-radius: $border-radius-card;
         
         .card__image {
@@ -148,27 +148,53 @@ header, main {
 
 .container-activity {
 
+    .cards {
+        column-gap: 20px;
+    }
+
     .col {
-        flex-direction: row;
         flex-basis: 20%;
+        height: 400px;
 
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-between;
 
-        & > .card:first-child {
-            flex-basis: 30%;
+        .card {
+
+            flex-direction: column;
+            //height: 200px;
+
+            &:only-child {
+                border: 1px solid green;
+                flex-basis: 100%;
+
+                .card__image {
+                    height: 80%;
+                }
+            }
+
+            &:first-child:not(:only-child) {
+                border: 1px solid blue;
+                max-height: 50%;
+
+                .card__image {
+                    max-height: 250px;
+                }
+            }
+            
+            &:last-child:not(:only-child) {
+                border: 1px solid red;
+                max-height: 30%;
+
+                .card__image {
+                    max-height: 100px;
+                }
+            }
         }
 
-        & > .card:last-child {
-            flex-basis: 60%;
-        }
     }
 
-    .card {
-        flex-direction: column;
-        height: 200px;
-    }
 }
 
 footer {

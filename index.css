@@ -58,7 +58,6 @@ header, main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
   border-radius: 10px;
 }
 
@@ -175,38 +174,60 @@ header, main {
   width: 100%;
 }
 
+.container-activity .cards {
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
 .container-activity .col {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.container-activity .col > .card:first-child {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
-.container-activity .col > .card:last-child {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
-}
-
-.container-activity .card {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-activity .col .card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-activity .col .card:only-child {
+  border: 1px solid green;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container-activity .col .card:only-child .card__image {
+  height: 80%;
+}
+
+.container-activity .col .card:first-child:not(:only-child) {
+  border: 1px solid blue;
+  max-height: 50%;
+}
+
+.container-activity .col .card:first-child:not(:only-child) .card__image {
+  max-height: 250px;
+}
+
+.container-activity .col .card:last-child:not(:only-child) {
+  border: 1px solid red;
+  max-height: 30%;
+}
+
+.container-activity .col .card:last-child:not(:only-child) .card__image {
+  max-height: 100px;
 }
 
 footer {
