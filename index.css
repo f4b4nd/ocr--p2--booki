@@ -5,6 +5,10 @@
 - large (computer) : width >= 992px
 */
 /*****************/
+body {
+  padding: 1em;
+}
+
 .jumbotron {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +16,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .jumbotron .container-housing, .jumbotron .container-popular {
@@ -25,6 +31,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .cards .card {
@@ -32,13 +39,15 @@
   display: -ms-flexbox;
   display: flex;
   border: 1px solid red;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .cards .card .card__image {
   max-width: 500px;
   max-height: 500px;
   overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .cards .card picture, .cards .card img {
@@ -68,7 +77,6 @@
 }
 
 .container-housing .cards {
-  border: 1px solid black;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -121,12 +129,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container-popular .cards {
+  border: 1px solid black;
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
@@ -141,12 +150,34 @@
 }
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   .container-housing {
     max-width: 60vw;
   }
   .container-popular {
     max-width: 30vw;
+  }
+}
+
+/**MEDIUM DEVICES**/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-housing {
+    max-width: 45vw;
+  }
+  .container-housing .card {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .container-popular {
+    max-width: 40vw;
+  }
+  .container-popular .cards {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
 }
 
