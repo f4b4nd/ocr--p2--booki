@@ -2,3 +2,39 @@
 @import 'container-popular';
 @import 'container-activity';
 
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+
+    .container-housing, .container-popular {
+        padding: 1em;
+    }
+
+    .container-popular {
+        background-color: $light-grey;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+/**LARGE DEVICES**/
+@media screen and (min-width: 991px) {
+
+}
+
+/**MEDIUM DEVICES**/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/**SMALL DEVICES**/
+@media screen and (max-width: 767px) {
+
+    .jumbotron {
+        flex-direction: column-reverse;
+    }
+
+}

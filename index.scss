@@ -1,7 +1,8 @@
 @import 'scss/reset' ;
 @import 'scss/constants' ;
 @import 'scss/containers/index';
-@import 'scss/font-awesome-custom';
+@import 'scss/cards' ;
+@import 'scss/icons';
 @import 'scss/footer' ;
 
 /*
@@ -21,25 +22,52 @@ header, main {
     padding: 1em;
 }
 
+button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+/********/
+
+
 form {
+    height: 30px;
+    margin: 0; padding: 0;
+    line-height: 0;
+    
+    * {margin: 0; padding:0;}
+
+    button, input, .icon-container {
+        height: 100%;
+    }
+
     display: inline-block;
     border: 0.5px solid $grey;
     border-radius: 10px;
 
     .icon-container {
+        display: inline-block;
+        width: 30px;
         background-color: $light-grey;
     }
 
     button {
+        padding: 5px;
+        font-size: 15px;
         background-color: $blue;
+        color: white;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        color: white;
-        padding: 5px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        font-size: 15px;
-        border: none;
+    }
+
+    input {
+        height: 100%;
     }
 }
 
@@ -67,49 +95,6 @@ form {
     }
 }
 
-.jumbotron {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
-
-    .container-housing, .container-popular {
-        padding: 1em;
-    }
-
-    .container-popular {
-        background-color: $light-grey;
-        border-radius: 10px;
-    }
-
-}
-
-.cards {
-
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-
-    .card {    
-        display: flex;
-        border-radius: $border-radius-card;
-        
-        .card__image {
-            max-width: 500px;
-            max-height: 500px;
-            overflow: hidden;
-            border-top-right-radius: $border-radius-card;
-            border-top-left-radius: $border-radius-card;
-        }
-    
-        picture, img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }            
-        
-    }
-
-}
 
 
 /**LARGE DEVICES**/
@@ -147,13 +132,6 @@ form {
                 display: none;
             }
         }
-    }
-    .cards {
-        flex-direction: column;
-    }
-
-    .jumbotron {
-        flex-direction: column-reverse;
     }
 
 }
