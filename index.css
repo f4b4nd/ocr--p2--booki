@@ -97,7 +97,7 @@ header .top-navigation li {
   height: 100%;
 }
 
-header .top-navigation li.active a {
+header .top-navigation li:hover a {
   color: #0065FC;
 }
 
@@ -122,7 +122,7 @@ header .top-navigation li.active a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .top-navigation li.active {
+  .top-navigation li:hover {
     border-top: 3px solid #0065FC;
   }
 }
@@ -168,13 +168,13 @@ header .top-navigation li.active a {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  .top-navigation li.active {
+  .top-navigation li:hover {
     border-bottom: 3px solid #0065FC;
   }
-  .top-navigation li.active a {
+  .top-navigation li:hover a {
     color: #0065FC;
   }
-  .top-navigation li:not(.active) {
+  .top-navigation li:not(:hover) {
     border-bottom: 3px solid #F2F2F2;
   }
 }
