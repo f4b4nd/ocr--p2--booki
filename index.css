@@ -27,6 +27,96 @@ a:hover {
   text-decoration: underline;
 }
 
+input:focus, button:focus {
+  outline: none;
+}
+
+.form-container {
+  padding: 1em 0;
+}
+
+form.search {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 50px;
+}
+
+form.search button, form.search input, form.search .icon-container {
+  height: 100%;
+}
+
+form.search .icon-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  background-color: #F2F2F2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+form.search .icon-container:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+form.search input {
+  border: 1px solid #F2F2F2;
+  border-right: none;
+  border-left: none;
+  padding: 1em;
+}
+
+form.search button {
+  min-width: 40px;
+  padding: 4px 15px;
+  font-size: 15px;
+  background-color: #0065FC;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/**LARGE DEVICES**/
+@media screen and (min-width: 991px) {
+  form.search button .icon {
+    display: none;
+  }
+}
+
+/**MEDIUM DEVICES**/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  form.search button .icon {
+    display: none;
+  }
+}
+
+/**SMALL DEVICES**/
+@media screen and (max-width: 767px) {
+  form.search {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form.search input {
+    min-width: 70%;
+  }
+  form.search button {
+    border-radius: 10px;
+  }
+  form.search button .text {
+    display: none;
+  }
+}
+
 .container-housing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,44 +520,6 @@ button:hover {
 }
 
 /********/
-form {
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  display: inline-block;
-  border: 0.5px solid grey;
-  border-radius: 10px;
-}
-
-form * {
-  margin: 0;
-  padding: 0;
-}
-
-form button, form input, form .icon-container {
-  height: 100%;
-}
-
-form .icon-container {
-  display: inline-block;
-  width: 30px;
-  background-color: #F2F2F2;
-}
-
-form button {
-  padding: 5px;
-  font-size: 15px;
-  background-color: #0065FC;
-  color: white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-form input {
-  height: 100%;
-}
-
 .filters ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,23 +544,6 @@ form input {
 }
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
-  form button .icon {
-    display: none;
-  }
-}
-
 /**MEDIUM DEVICES**/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  form button .icon {
-    display: none;
-  }
-}
-
 /**SMALL DEVICES**/
-@media screen and (max-width: 767px) {
-  form button .text {
-    display: none;
-  }
-}
 /*# sourceMappingURL=index.css.map */

@@ -1,8 +1,9 @@
 @import 'scss/reset' ;
 @import 'scss/constants' ;
-@import 'scss/containers/index';
+@import 'scss/form' ;
+@import 'scss/containers/index' ;
 @import 'scss/cards' ;
-@import 'scss/icons';
+@import 'scss/icons' ;
 @import 'scss/footer' ;
 
 /*
@@ -35,42 +36,6 @@ button {
 
 /********/
 
-
-form {
-    height: 30px;
-    margin: 0; padding: 0;
-    line-height: 0;
-    
-    * {margin: 0; padding:0;}
-
-    button, input, .icon-container {
-        height: 100%;
-    }
-
-    display: inline-block;
-    border: 0.5px solid $grey;
-    border-radius: 10px;
-
-    .icon-container {
-        display: inline-block;
-        width: 30px;
-        background-color: $light-grey;
-    }
-
-    button {
-        padding: 5px;
-        font-size: 15px;
-        background-color: $blue;
-        color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    input {
-        height: 100%;
-    }
-}
-
 .filters {
     ul {
         display: flex;
@@ -100,38 +65,14 @@ form {
 /**LARGE DEVICES**/
 @media screen and (min-width: 991px) {
 
-    form {
-        button {
-            .icon {
-                display: none;
-            }
-        }
-    }
-
 }
 
 /**MEDIUM DEVICES**/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    form {
-        button {
-            .icon {
-                display: none;
-            }
-        }
-    }
-
 }
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-
-    form {
-        button {
-            .text {
-                display: none;
-            }
-        }
-    }
 
 }
