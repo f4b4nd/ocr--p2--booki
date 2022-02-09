@@ -4,12 +4,8 @@
     flex-direction: column;
     justify-content: flex-start;
     row-gap: 10px;
-
-    /*
-    & > *, & > * > * {
-         border: 1px solid black;
-    }
-    */
+    
+    background-color: $light-grey;
 
     .container__header {
         display: flex;
@@ -17,15 +13,13 @@
         align-items: flex-start;
 
         h3 {
-            margin: 0;
+            margin: 15px 0;
         }
     }
 
     .cards {
-        //border: 1px solid black;
         align-items: space-evenly;
         justify-content: flex-start;
-        //height: 500px;
     }
 
     .card {
@@ -45,6 +39,10 @@
             background-color: white;
             padding: 0 1em;
             width: 100%;
+
+            .price {
+                font-weight: bold;
+            }
         }
 
     }
@@ -56,23 +54,11 @@
 /**LARGE DEVICES**/
 @media screen and (min-width: 991px) {
 
-    /*.container-popular {
-        max-width: 30vw;
-    }*/
-
 }
 
 /**MEDIUM DEVICES**/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    .container-popular {
-        //max-width: 40vw;
-
-        /*.cards {
-            align-items: flex-start;
-            justify-content: flex-start;
-        }*/
-    }
 
 }
 
