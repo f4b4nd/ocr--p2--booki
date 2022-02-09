@@ -31,6 +31,37 @@ input:focus, button:focus {
   outline: none;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header, main {
+  padding: 1em;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
 .form-container {
   padding: 1em 0;
 }
@@ -499,26 +530,6 @@ footer .about .links, footer .housing .links, footer .contact .links {
 - medium (tablet) : 768px <= width <= 991px
 - large (computer) : width >= 992px
 */
-/******/
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
-header, main {
-  padding: 1em;
-}
-
-button {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  border: none;
-}
-
-button:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
 /********/
 .filters ul {
   display: -webkit-box;

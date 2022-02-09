@@ -1,6 +1,7 @@
 @import 'scss/reset' ;
 @import 'scss/constants' ;
-@import 'scss/form' ;
+@import 'scss/global' ;
+@import 'scss/search-form' ;
 @import 'scss/containers/index' ;
 @import 'scss/cards' ;
 @import 'scss/icons' ;
@@ -13,26 +14,6 @@
 - large (computer) : width >= 992px
 */
 
-/******/
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-header, main {
-    padding: 1em;
-}
-
-button {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    border: none;
-
-    &:hover {
-        cursor: pointer;
-        opacity: 0.7;
-    }
-}
 
 /********/
 
