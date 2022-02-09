@@ -3,6 +3,7 @@
 @import 'scss/global' ;
 @import 'scss/header' ;
 @import 'scss/search-form' ;
+@import 'scss/filter';
 @import 'scss/containers/index' ;
 @import 'scss/cards' ;
 @import 'scss/icons' ;
@@ -15,33 +16,25 @@
 - large (computer) : width >= 992px
 */
 
-
-/********/
-
-.filters {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 50px;
-
-        li {
-            padding: 0;
-            margin: 0;
-            border: 1px solid $grey;
-            //border-radius: 20px;
-            padding: 10px;
-
-        }
-
-        .icon-container {
-            background-color: $light-blue;
-            border-radius: 50px;
-            //height: 50px;
-            padding: 10px;
-        }
-    }
+h1 {
+    font-size: 25px;
+    margin: 5px 0;
 }
 
+h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.results-container, .jumbotron, .container-activity {
+    margin-bottom: 20px;
+}
 
 
 /**LARGE DEVICES**/

@@ -265,6 +265,101 @@ form.search button {
   }
 }
 
+.filters-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  font-weight: bold;
+}
+
+.filters-container .filters__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+.filters-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  padding: 0;
+}
+
+.filters-container ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 40px;
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+
+.filters-container ul li:hover {
+  cursor: pointer;
+}
+
+.filters-container ul .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DEEBFF;
+  border-radius: 50px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+
+.filters-container ul .text-container {
+  padding: 0.5em 0.8em;
+}
+
+/**LARGE DEVICES**/
+/**MEDIUM DEVICES**/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .filters-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/**SMALL DEVICES**/
+@media screen and (max-width: 767px) {
+  .filters-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .container-housing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,28 +746,24 @@ footer a:hover {
 - medium (tablet) : 768px <= width <= 991px
 - large (computer) : width >= 992px
 */
-/********/
-.filters ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+h1 {
+  font-size: 25px;
+  margin: 5px 0;
 }
 
-.filters ul li {
-  padding: 0;
+h2 {
   margin: 0;
-  border: 1px solid grey;
-  padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
 }
 
-.filters ul .icon-container {
-  background-color: #DEEBFF;
-  border-radius: 50px;
-  padding: 10px;
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.results-container, .jumbotron, .container-activity {
+  margin-bottom: 20px;
 }
 
 /**LARGE DEVICES**/

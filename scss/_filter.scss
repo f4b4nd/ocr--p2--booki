@@ -1,0 +1,78 @@
+
+.filters-container {
+
+    display: flex;
+    column-gap: 20px;
+    font-weight: bold;
+
+    .filters__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 0;
+
+        li {
+            display: inline-flex;
+            align-items: center;
+
+            max-height: 40px;
+            border: 1px solid $grey;
+            border-radius: $border-radius-filter;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $light-blue;
+            border-radius: 50px;    
+            padding: 10px;
+
+            // icon has to overflow from its container
+            width: 40px;
+            height: 40px;
+            transform: translateX(-2px);
+        }
+
+        .text-container {
+            padding: 0.5em 0.8em;
+        }
+    }
+
+}
+
+
+
+/**LARGE DEVICES**/
+@media screen and (min-width: 991px) {
+
+}
+
+/**MEDIUM DEVICES**/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .filters-container {
+        flex-direction: column;
+    }
+}
+
+/**SMALL DEVICES**/
+@media screen and (max-width: 767px) {
+
+    .filters-container {
+        flex-direction: column;
+    }
+}
