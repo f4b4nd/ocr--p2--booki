@@ -3,19 +3,29 @@
 @import 'container-activity';
 
 .jumbotron {
+
     display: flex;
     justify-content: space-between;
-    column-gap: 10px;
+
+    column-gap: 15px;
+    margin: 0;
+    padding: 0;
 
     .container-housing, .container-popular {
+        margin: 0;
         padding: 1em;
-    }
-
-    .container-popular {
-        background-color: $light-grey;
         border-radius: 10px;
     }
 
+    .container-popular {
+        //border: 1px solid red;
+        background-color: $light-grey;
+    }
+
+    .container-housing {
+        border: 1px solid green;
+        background-color: $light-grey;
+    }
 }
 
 
@@ -23,10 +33,17 @@
 /**LARGE DEVICES**/
 @media screen and (min-width: 991px) {
 
+    .jumbotron {
+        align-items: flex-start;
+    }
 }
 
 /**MEDIUM DEVICES**/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .jumbotron {
+        align-items: flex-start;
+    }
 
 }
 
