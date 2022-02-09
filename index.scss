@@ -18,6 +18,10 @@ html, body {
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -37,14 +41,42 @@ header, main {
     padding: 1em;
 }
 
+.filters {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+
+        li {
+            padding: 0;
+            margin: 0;
+            border: 1px solid $grey;
+            //border-radius: 20px;
+            padding: 10px;
+
+        }
+
+        .icon-container {
+            background-color: $light-blue;
+            border-radius: 50px;
+            //height: 50px;
+            padding: 10px;
+        }
+    }
+}
+
 .jumbotron {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
 
     .container-housing, .container-popular {
-        background-color: $light-grey;
         padding: 1em;
+    }
+
+    .container-popular {
+        background-color: $light-grey;
+        border-radius: 10px;
     }
 
 }
@@ -57,7 +89,6 @@ header, main {
 
     .card {    
         display: flex;
-        //border: 1px solid red;
         border-radius: $border-radius-card;
         
         .card__image {
@@ -80,13 +111,31 @@ header, main {
 }
 
 
-.fa-star {
-    color: $blue;
 
-    &.star--empty {
-        color: $grey;
+.fas {
+
+    &.fa-money-bill-wave, &.fa-child, &.fa-heart, &.fa-dog {
+        color: $blue;
+        font-size: 20px;
     }
+
+    &.fa-info-circle {
+        color: white;
+        background-color: $blue;
+        font-size: 20px;
+    }
+
+    &.fa-star {
+        color: $blue;
+
+        &.star--empty {
+            color: $grey;
+        }
+    }
+
 }
+
+
 
 .container-housing {
 
@@ -104,6 +153,8 @@ header, main {
         flex-direction: column;
         flex-basis: 30%;
         height: 250px;
+
+        border: 5px solid white;
 
         .card__image {
             height: 200px;
@@ -134,12 +185,15 @@ header, main {
     }
 
     .cards {
-        border: 1px solid black;
+        //border: 1px solid black;
         align-items: space-evenly;
         justify-content: flex-start;
     }
 
     .card {
+
+        border: 5px solid white;
+
         height: 150px;
         width: 100%;
     }
@@ -228,6 +282,7 @@ footer {
 
     .container-housing {
         max-width: 60vw;
+        background-color: $light-grey;
     }
 
     .container-popular {
@@ -252,6 +307,7 @@ footer {
 
     .container-housing {
         max-width: 45vw;
+        background-color: $light-grey;
 
         .card {
             flex-basis: 45%;
@@ -293,7 +349,6 @@ footer {
     .container-housing, .container-popular {
         max-width: auto;
     }
-
 
     .container-activity {
 
