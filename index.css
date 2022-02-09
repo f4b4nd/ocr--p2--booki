@@ -84,6 +84,8 @@ header .top-navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -91,10 +93,14 @@ header .top-navigation ul {
 }
 
 header .top-navigation li {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .top-navigation li:hover a {
@@ -110,12 +116,8 @@ header .top-navigation li:hover a {
     padding: 0 1em;
   }
   .top-navigation {
-    padding: 0 1em;
-  }
-  .top-navigation ul {
-    -webkit-column-gap: 40px;
-            column-gap: 40px;
-    height: 100%;
+    padding: 0;
+    min-width: 400px;
   }
   .top-navigation li {
     -webkit-box-align: end;
@@ -150,23 +152,10 @@ header .top-navigation li:hover a {
     margin-top: 2.5em;
     height: 40px;
   }
-  .top-navigation ul {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .top-navigation li {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100%;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
   }
   .top-navigation li:hover {
     border-bottom: 3px solid #0065FC;
@@ -665,12 +654,6 @@ form.search button {
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
   color: #0065FC;
-  font-size: 20px;
-}
-
-.fas.fa-info-circle {
-  color: white;
-  background-color: #0065FC;
   font-size: 20px;
 }
 
