@@ -1,0 +1,22 @@
+.fas {
+
+    &.fa-money-bill-wave, &.fa-child, &.fa-heart, &.fa-dog {
+        color: $blue;
+        font-size: 20px;
+    }
+
+    &.fa-info-circle {
+        color: white;
+        background-color: $blue;
+        font-size: 20px;
+    }
+
+    &.fa-star {
+        color: $blue;
+
+        &.star--empty {
+            color: $grey;
+        }
+    }
+
+}
