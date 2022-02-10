@@ -30,25 +30,24 @@
         height: $card-housing-height;
         min-width: $card-housing-min-width;
         border: 5px solid white;
+    }
 
-        .card__image {
-            min-height: 60%;
+    .card__image {
+        min-height: 60%;
+    }
+
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        padding: 0.5em;
+        background-color: white;
+
+        .price {
+            font-weight: bold;
         }
-
-        .card__body {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-
-            padding: 0.5em;
-            background-color: white;
-
-            .price {
-                font-weight: bold;
-            }
-        }
-
     }
 
 }
