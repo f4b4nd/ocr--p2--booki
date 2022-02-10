@@ -23,6 +23,10 @@ a {
   color: black;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 input:focus, button:focus {
   outline: none;
 }
@@ -401,6 +405,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  row-gap: 20px;
   max-width: 1200px;
 }
 
