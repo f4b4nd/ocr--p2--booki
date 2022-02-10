@@ -72,7 +72,7 @@ header .logo img {
 }
 
 header .top-navigation {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 header .top-navigation ul {
@@ -862,6 +862,8 @@ footer .footer__about .links, footer .footer__housing .links, footer .footer__co
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 10px;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 footer a:hover {
