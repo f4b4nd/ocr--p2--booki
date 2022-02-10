@@ -12,6 +12,10 @@
     .more-link {
         font-weight: bold;
         margin: 15px 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .cards {
@@ -71,7 +75,6 @@
 
     .container-housing {
         background-color: $light-grey;
-        flex: 1;
 
         .card {
             flex-basis: 45%;

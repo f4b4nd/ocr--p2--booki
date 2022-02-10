@@ -33,14 +33,11 @@
 
 /** LARGE DEVICES ONLY !! **/
 @media screen and (min-width: 991px) {
-
     .container-activity {
         .cards__group {
             flex-basis: 22%;           
         }
-        
     }
-
 }
 
 /**MEDIUM DEVICES ONLY !! **/
@@ -54,9 +51,8 @@
         .cards__group {
             flex-basis: 45% !important;
         }
+
     }
-
-
 }
 
 /** LARGE + MEDIUM DEVICES**/
@@ -92,8 +88,8 @@
                 max-height: 100px;
             }
         }
-    
     }
+
 }
 
 /**SMALL DEVICES**/
@@ -101,30 +97,22 @@
 
     .container-activity {
 
-        .cards {
-
-            row-gap: 0;
-        
-        }
-
         .cards__group {
-            //display: block;
-            //max-width: 100%;
+            row-gap: 20px;
         }
-
+        
         .card {
             margin-bottom: 10px;
             height: 200px !important;
-
-            .card__image {
-                height: 150px !important;
-            }
-
-            .card__body {
-                height: 50px !important;
-            }
         }
-        
+
+        .card__image {
+            height: 150px !important;
+        }
+
+        .card__body {
+            height: 50px !important;
+        }
                 
     }
 
