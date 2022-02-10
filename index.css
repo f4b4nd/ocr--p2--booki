@@ -31,6 +31,12 @@ input:focus, button:focus {
   outline: none;
 }
 
+pre {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -524,9 +530,6 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-popular .cards {
-  -webkit-box-align: space-evenly;
-      -ms-flex-align: space-evenly;
-          align-items: space-evenly;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -568,6 +571,10 @@ form.searchform input::-moz-placeholder {
 
 .container-popular .card__title {
   margin-bottom: 10px;
+}
+
+.container-popular .card__title span.linebreak {
+  display: block;
 }
 
 .container-popular .card__rating {
@@ -903,7 +910,7 @@ h2 {
 
 h3 {
   font-size: 22px;
-  font-weight: 1900;
+  font-weight: bold;
 }
 
 h4 {

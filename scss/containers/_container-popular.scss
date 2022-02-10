@@ -17,7 +17,6 @@
     }
 
     .cards {
-        align-items: space-evenly;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -49,6 +48,10 @@
 
     .card__title {
         margin-bottom: 10px;
+        
+        span.linebreak {
+            display: block;
+        }
     }
 
     .card__rating {
