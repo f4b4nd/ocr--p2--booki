@@ -19,20 +19,20 @@
 
     .cards {
         align-items: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .card {
+        flex-basis: 100%;
         height: $card-popular-height;
-        width: 100%;
-        max-width: 600px;
-
-        margin: auto;
-        border: 5px solid white;
+        max-width: $card-popular-maxwidth;
+        min-width: $card-popular-minwidth;
     }
         
     .card__image {
-        height: 100%;
-        width: 200px;
+        height: $card-popular-height;
+        width: $card-popular-height;
     }
 
     .card__body {
@@ -40,12 +40,15 @@
         flex-direction: column;
         background-color: white;
         padding: 10px 1em;
-        width: 100%;
-
+        flex: 1; 
 
         .price {
             font-weight: bold;
         }
+    }
+
+    .card__title {
+        margin-bottom: 10px;
     }
 
     .card__rating {

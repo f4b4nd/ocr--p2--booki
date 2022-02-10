@@ -5,10 +5,12 @@
     row-gap: 20px;
 
     .card {    
+        
         display: flex;
         border-radius: $border-radius-card;
         overflow: hidden;
 
+        border: 5px solid white;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         transition: 0.2s;
 
@@ -55,9 +57,5 @@
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-
-    .cards {
-        flex-direction: column;
-    }
 
 }
