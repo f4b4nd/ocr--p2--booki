@@ -745,11 +745,13 @@ form.searchform input::-moz-placeholder {
   overflow: hidden;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .cards .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -816,7 +818,7 @@ footer {
   background-color: #F2F2F2;
 }
 
-footer .about, footer .housing, footer .contact {
+footer .footer__about, footer .footer__housing, footer .footer__contact {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   display: -webkit-box;
@@ -829,11 +831,11 @@ footer .about, footer .housing, footer .contact {
   row-gap: 8px;
 }
 
-footer .about .title, footer .housing .title, footer .contact .title {
+footer .footer__about .title, footer .footer__housing .title, footer .footer__contact .title {
   font-weight: bold;
 }
 
-footer .about .links, footer .housing .links, footer .contact .links {
+footer .footer__about .links, footer .footer__housing .links, footer .footer__contact .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
