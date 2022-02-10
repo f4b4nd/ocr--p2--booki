@@ -1,18 +1,18 @@
-.form-container {
+.container-searchform {
     padding: 1em 0;
 }
 
-form.search {
+form.searchform {
 
     display: inline-flex;
 
     height: 50px;
 
-    button, input, .icon-container {
+    .searchform__icon, .searchform__input, .searchform__button {
         height: 100%;
     }
     
-    .icon-container {
+    .searchform__icon {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -28,14 +28,14 @@ form.search {
         }
     }
 
-    input {
+    .searchform__input {
         border: 1px solid $light-grey;
         border-right: none;
         border-left: none;
         padding: 1em;
     }
 
-    button {
+    .searchform__button {
         min-width: 40px;
         padding: 4px 15px;
         font-size: 15px;
@@ -52,7 +52,7 @@ form.search {
 /**LARGE DEVICES**/
 @media screen and (min-width: 991px) {
 
-    form.search button .icon {
+    .searchform__button .icon {
         display: none;        
     }
 
@@ -61,7 +61,7 @@ form.search {
 /**MEDIUM DEVICES**/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    form.search button .icon {
+    .searchform__button .icon {
         display: none;
     }
 
@@ -70,15 +70,15 @@ form.search {
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
 
-    form.search {
+    .searchform {
         width: 100%;
         justify-content: center;
 
-        input {
+        .searchform__input {
             min-width: 70%;
         }
 
-        button {
+        .searchform__button {
 
             border-radius: $border-radius-form;
             .text {
