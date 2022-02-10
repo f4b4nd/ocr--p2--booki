@@ -54,5 +54,7 @@ h4 {
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-
+    .container-title, .container-filters, .container-results {
+        padding: 0 12px;
+    }
 }

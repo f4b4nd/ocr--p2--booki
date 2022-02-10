@@ -9,18 +9,17 @@
 
     column-gap: 15px;
     row-gap: 15px;
-    
+
     margin: 0;
     padding: 0;
 
-    .container-housing, .container-popular {
-        margin: 0;
-        padding: 1em;
-        border-radius: 10px;
-    }
-
 }
 
+.container-housing, .container-popular, .container-activity {
+    margin: 0;
+    padding: 1em;
+    border-radius: 10px;
+}
 
 
 /**LARGE DEVICES**/
@@ -46,5 +45,6 @@
     .jumbotron {
         flex-direction: column-reverse;
     }
+
 
 }
