@@ -2,7 +2,6 @@
 
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     row-gap: 10px;
     
     background-color: $light-grey;
@@ -25,14 +24,15 @@
 
     .card {
         flex-basis: 100%;
-        height: $card-popular-height;
-        max-width: $card-popular-maxwidth;
-        min-width: $card-popular-minwidth;
+
+        height: $popular__card-height;
+        max-width: $popular__card-maxwidth;
+        min-width: $popular__card-minwidth;
     }
         
     .card__image {
-        height: $card-popular-height;
-        width: $card-popular-height;
+        height: $popular__card-height;
+        width: $popular__card-height;
     }
 
     .card__body {

@@ -17,14 +17,19 @@ $border-radius-filter: 30px;
 
 
 
-// CARDS SIZE
-$card-housing-height: 200px;
-$card-housing-min-width: 250px;
+// CARDS SIZE : HOUSING
+$housing__container-maxwith: 1200px;
+$housing__card-height: 240px;
+$housing__card-minwidth: 250px;
+$housing__card-minheight--smalldevice: 300px;
+$housing__card__body-height: 60px;
 
+// CARDS SIZE : POPULAR
+$popular__card-height: 150px;
+$popular__card-maxwidth: 600px;
+$popular__card-minwidth: 320px;
 
-$card-popular-height: 150px;
-$card-popular-maxwidth: 600px;
-$card-popular-minwidth: 320px;
-
-$activity-cards__group-maxheight: 420px;
-$card-activity-height-smalldevice: 210px;
+// CARDS SIZE : ACTIVITY
+$activity__cards__group-maxheight: 420px;
+$activity__cards__group-maxheight--smalldevice: 500px;
+$activity__card__body-height: 40px;

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     row-gap: 20px;
-    max-width: 1200px;
+    max-width: $housing__container-maxwith;
 
     h3 {
         margin: 10px 10px;
@@ -28,8 +28,8 @@
         flex: 1;
 
         flex-direction: column;
-        height: $card-housing-height;
-        min-width: $card-housing-min-width;
+        height: $housing__card-height;
+        min-width: $housing__card-minwidth;
     }
 
     .card__image {
@@ -37,9 +37,9 @@
     }
 
     .card__body {
-        height: 70px;
+        height: $housing__card__body-height;
         background-color: white;
-        padding: 0.5em;
+        padding: 0.2em 0.5em 0 0.5em;
 
         display: flex;
         flex-direction: column;
@@ -89,7 +89,7 @@
     .container-housing {
 
         .card {
-            min-height: 300px;
+            min-height: $housing__card-minheight--smalldevice;
         }
 
     }

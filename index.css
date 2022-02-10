@@ -433,7 +433,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 200px;
+  height: 240px;
   min-width: 250px;
 }
 
@@ -444,9 +444,9 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-housing .card__body {
-  height: 70px;
+  height: 60px;
   background-color: white;
-  padding: 0.5em;
+  padding: 0.2em 0.5em 0 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +602,6 @@ form.searchform input::-moz-placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-height: 420px;
-  row-gap: 0 !important;
 }
 
 .container-activity .card {
@@ -613,7 +612,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .container-activity .card__image {
@@ -686,8 +685,11 @@ form.searchform input::-moz-placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container-activity .cards__group {
+    max-height: 500px;
+  }
   .container-activity .card {
-    height: 210px;
+    height: 250px;
   }
 }
 
@@ -791,7 +793,7 @@ form.searchform input::-moz-placeholder {
 }
 
 .cards .card__title {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .cards .card__subtitle {
@@ -808,6 +810,7 @@ form.searchform input::-moz-placeholder {
 
 .fas.fa-star {
   color: #0065FC;
+  font-size: 15px;
 }
 
 .fas.fa-star.star--empty {

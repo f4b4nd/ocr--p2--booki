@@ -15,14 +15,14 @@
         flex-direction: column;
         justify-content: space-between;
 
-        max-height: $activity-cards__group-maxheight;
-        row-gap: 0 !important;
+        //min-height: $cards__group-activity-minheight;
+        max-height: $activity__cards__group-maxheight;
     }
 
     .card {        
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .card__image {
@@ -35,7 +35,7 @@
         align-items: flex-start;
         justify-content: center;
         
-        height: 40px;
+        height: $activity__card__body-height;
         padding-left: 8px;
         font-size: 1em !important;
     }
@@ -88,12 +88,17 @@
 @media screen and (max-width: 767px) {
     .container-activity {
 
+
         .cards {
             flex-direction: column;
         }
 
+        .cards__group {
+            max-height: $activity__cards__group-maxheight--smalldevice;
+        }
+
         .card {
-            height: $card-activity-height-smalldevice ;
+            height: $activity__cards__group-maxheight--smalldevice / 2 ;
         }       
     }
 }
