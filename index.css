@@ -46,18 +46,6 @@ button:hover {
   opacity: 0.7;
 }
 
-input::-webkit-input-placeholder {
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-}
-
-input::-moz-placeholder {
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,6 +209,24 @@ form.searchform .searchform__button {
   border-bottom-right-radius: 10px;
 }
 
+form.searchform input {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+form.searchform input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+}
+
+form.searchform input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+}
+
 /**LARGE DEVICES**/
 @media screen and (min-width: 991px) {
   .searchform__button .icon {
@@ -254,7 +260,35 @@ form.searchform .searchform__button {
   }
 }
 
-.filters-container {
+.container-results .results__icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding: 10px 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.container-results .results__icon .fa-info {
+  color: #0065FC;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  font-size: 15px;
+}
+
+.container-results .results__text {
+  margin-left: 5px;
+}
+
+.container-filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +297,7 @@ form.searchform .searchform__button {
   font-weight: bold;
 }
 
-.filters-container .filters__title {
+.container-filters .filters__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +311,7 @@ form.searchform .searchform__button {
   font-size: 18px;
 }
 
-.filters-container ul {
+.container-filters ul.filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,7 +323,7 @@ form.searchform .searchform__button {
   padding: 0;
 }
 
-.filters-container ul li {
+.container-filters ul.filters li.filter {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -297,15 +331,20 @@ form.searchform .searchform__button {
       -ms-flex-align: center;
           align-items: center;
   max-height: 40px;
-  border: 1px solid grey;
+  border: 1px solid #d9d9d9;
   border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.filters-container ul li:hover {
+.container-filters ul.filters li.filter:hover {
   cursor: pointer;
+  background-color: #f0f2f5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.filters-container ul .icon-container {
+.container-filters ul.filters .filter__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,14 +363,14 @@ form.searchform .searchform__button {
           transform: translateX(-2px);
 }
 
-.filters-container ul .text-container {
+.container-filters ul.filters .filter__text {
   padding: 0.5em 0.8em;
 }
 
 /**LARGE DEVICES**/
 /**MEDIUM DEVICES**/
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .filters-container {
+  .container-filters {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -341,7 +380,7 @@ form.searchform .searchform__button {
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-  .filters-container {
+  .container-filters {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -745,35 +784,11 @@ form.searchform .searchform__button {
 }
 
 .fas.fa-star.star--empty {
-  color: grey;
+  color: #d9d9d9;
 }
 
 .fas.fa-chart-line {
   font-size: 30px;
-}
-
-.icon-info-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid grey;
-  border-radius: 50px;
-  padding: 10px 10px;
-  height: 25px;
-  width: 25px;
-}
-
-.icon-info-container .fa-info {
-  color: #0065FC;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  font-size: 15px;
 }
 
 footer {

@@ -17,19 +17,3 @@ button {
     }
 }
 
-input {
-
-    &::-webkit-input-placeholder {
-        font-size: 14px;
-        font-weight: bold;
-        color: black;
-    }
-
-    
-    &::-moz-placeholder {
-        font-size: 14px;
-        font-weight: bold;
-        color: black;
-    }
-
-}

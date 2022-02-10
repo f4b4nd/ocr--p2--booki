@@ -45,6 +45,29 @@ form.searchform {
         border-bottom-right-radius: $border-radius-form;
     }
 
+
+    // placeholder + value for input
+    input {
+    
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    
+        &::-webkit-input-placeholder {
+            font-size: 14px;
+            font-weight: bold;
+            color: $grey;
+        }
+    
+        
+        &::-moz-placeholder {
+            font-size: 14px;
+            font-weight: bold;
+            color: $grey;
+        }
+    
+    }
+    
 }
 
 
