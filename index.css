@@ -241,15 +241,8 @@ form.searchform input::-moz-placeholder {
   }
 }
 
-/**MEDIUM DEVICES**/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .searchform__button .icon {
-    display: none;
-  }
-}
-
-/**SMALL DEVICES**/
-@media screen and (max-width: 767px) {
+/** SMALL + MEDIUM DEVICES**/
+@media screen and (max-width: 991px) {
   .searchform {
     width: 100%;
     -webkit-box-pack: center;
@@ -372,6 +365,7 @@ form.searchform input::-moz-placeholder {
 
 .container-filters ul.filters .filter__text {
   padding: 0.5em 0.8em;
+  font-size: 14px;
 }
 
 /**LARGE DEVICES**/
@@ -572,8 +566,11 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-activity .cards {
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-activity .cards__group {
@@ -587,6 +584,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-height: 500px;
 }
 
 .container-activity .card {
@@ -594,7 +592,16 @@ form.searchform input::-moz-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 220px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.container-activity .card__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .container-activity .card__body {
@@ -608,15 +615,21 @@ form.searchform input::-moz-placeholder {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px;
-  padding: 0.5em;
+  padding-left: 8px;
+  font-size: 1em !important;
 }
 
 /** LARGE DEVICES ONLY !! **/
 @media screen and (min-width: 991px) {
+  .container-activity .cards {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
   .container-activity .cards__group {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
@@ -625,57 +638,32 @@ form.searchform input::-moz-placeholder {
 
 /**MEDIUM DEVICES ONLY !! **/
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .container-activity .cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .container-activity .cards__group {
-    -ms-flex-preferred-size: 45% !important;
-        flex-basis: 45% !important;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 
 /** LARGE + MEDIUM DEVICES**/
 @media screen and (min-width: 768px) {
-  .container-activity .cards__group {
-    height: 400px;
-  }
   .container-activity .card:only-child {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .container-activity .card:only-child .card__image {
-    height: 90%;
-  }
   .container-activity .card:first-child:not(:only-child) {
-    max-height: 60%;
-  }
-  .container-activity .card:first-child:not(:only-child) .card__image {
-    max-height: 250px;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
   }
   .container-activity .card:last-child:not(:only-child) {
-    max-height: 30%;
-  }
-  .container-activity .card:last-child:not(:only-child) .card__image {
-    max-height: 100px;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
   }
 }
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-  .container-activity .cards__group {
-    row-gap: 20px;
-  }
   .container-activity .card {
-    margin-bottom: 10px;
-    height: 200px !important;
-  }
-  .container-activity .card__image {
-    height: 150px !important;
-  }
-  .container-activity .card__body {
-    height: 50px !important;
+    height: 250px;
   }
 }
 
@@ -693,10 +681,14 @@ form.searchform input::-moz-placeholder {
   padding: 0;
 }
 
-.container-housing, .container-popular, .container-activity {
+.container-housing, .container-popular {
   margin: 0;
   padding: 1em;
   border-radius: 10px;
+}
+
+.container-activity {
+  padding: 1em;
 }
 
 /**LARGE DEVICES**/
@@ -767,6 +759,10 @@ form.searchform input::-moz-placeholder {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
 }
 
 .cards .card__title {

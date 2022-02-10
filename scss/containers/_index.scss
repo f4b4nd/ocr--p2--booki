@@ -15,10 +15,14 @@
 
 }
 
-.container-housing, .container-popular, .container-activity {
+.container-housing, .container-popular {
     margin: 0;
     padding: 1em;
     border-radius: 10px;
+}
+
+.container-activity {
+    padding: 1em;
 }
 
 

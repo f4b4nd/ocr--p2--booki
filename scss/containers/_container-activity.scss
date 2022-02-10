@@ -1,39 +1,55 @@
 .container-activity {
 
+
     h3 {
         margin-left: 20px;
     }
 
     .cards {
-        column-gap: 15px;
+        column-gap: 25px;
+        justify-content: center;
     }
 
     .cards__group {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        max-height: $activity-cards__group-maxheight;
     }
 
     .card {
         flex-direction: column;
-        min-width: $card-activity-min-width;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .card__image {
+        flex: 1;
     }
 
     .card__body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         
         height: 40px;
-        padding: 0.5em;
-    }
+        padding-left: 8px;
+        font-size: 1em !important;
 
+        //border: 1px solid black;
+    }
 }
 
 /** LARGE DEVICES ONLY !! **/
 @media screen and (min-width: 991px) {
     .container-activity {
+
+        .cards {
+            justify-content: flex-start !important;
+        }
+
         .cards__group {
             flex-basis: 22%;           
         }
@@ -42,51 +58,27 @@
 
 /**MEDIUM DEVICES ONLY !! **/
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .container-activity {
-
-        .cards {
-            justify-content: center;
-        }
-        
+    .container-activity {        
         .cards__group {
-            flex-basis: 45% !important;
+            flex-basis: 45%;
         }
-
     }
 }
 
 /** LARGE + MEDIUM DEVICES**/
 @media screen and (min-width: 768px) {
-
     .container-activity {
-
-        .cards__group {
-            height: $card-activity-cards__group-height;
-        }
         
-
         .card:only-child {
             flex-basis: 100%;
-
-            .card__image {
-                height: 90%;
-            }
         }
 
         .card:first-child:not(:only-child) {
-            max-height: 60%;
-
-            .card__image {
-                max-height: 250px;
-            }
+            flex-basis: 65%;
         }
         
         .card:last-child:not(:only-child) {
-            max-height: 30%;
-
-            .card__image {
-                max-height: 100px;
-            }
+            flex-basis: 35%;
         }
     }
 
@@ -94,26 +86,9 @@
 
 /**SMALL DEVICES**/
 @media screen and (max-width: 767px) {
-
     .container-activity {
-
-        .cards__group {
-            row-gap: 20px;
-        }
-        
         .card {
-            margin-bottom: 10px;
-            height: 200px !important;
-        }
-
-        .card__image {
-            height: 150px !important;
-        }
-
-        .card__body {
-            height: 50px !important;
-        }
-                
+            height: $card-activity-height-smalldevice ;
+        }       
     }
-
 }
