@@ -601,7 +601,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 420px;
+  max-height: 400px;
 }
 
 .container-activity .card {
@@ -650,6 +650,7 @@ form.searchform input::-moz-placeholder {
   .container-activity .cards__group {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
+    max-width: 300px;
   }
 }
 
@@ -687,6 +688,8 @@ form.searchform input::-moz-placeholder {
   }
   .container-activity .cards__group {
     max-height: 500px;
+    max-width: 500px;
+    margin: auto;
   }
   .container-activity .card {
     height: 250px;
