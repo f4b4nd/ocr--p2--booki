@@ -7,6 +7,7 @@
     .cards {
         column-gap: 25px;
         justify-content: center;
+        row-gap: 0 !important;
     }
 
     .cards__group {
@@ -15,6 +16,7 @@
         justify-content: space-between;
 
         max-height: $activity-cards__group-maxheight;
+        row-gap: 0 !important;
     }
 
     .card {        

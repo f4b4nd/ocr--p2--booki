@@ -587,6 +587,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 0 !important;
 }
 
 .container-activity .cards__group {
@@ -601,6 +602,7 @@ form.searchform input::-moz-placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-height: 420px;
+  row-gap: 0 !important;
 }
 
 .container-activity .card {
