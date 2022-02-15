@@ -3,16 +3,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    row-gap: 20px;
-    max-width: $housing__container-maxwidth;
+    row-gap: $housing__gap;
+
+    //max-width: $housing__container-maxwidth;
 
     h3 {
-        margin: 10px 10px;
+        margin: 0 $housing__margin;
+        font-size: 2em;
     }
 
     .more-link {
+        font-size: 1.2em;
         font-weight: bold;
-        margin: 15px 10px;
+        margin: $housing__margin;
 
         &:hover {
             text-decoration: underline;
@@ -20,16 +23,19 @@
     }
 
     .cards {
-        column-gap: 15px;
-        justify-content: center;
+        border: 1px solid black;
+        flex-wrap: wrap;
+        column-gap: $housing__gap;
+        row-gap : $housing__gap;
+        justify-content: flex-start;
     }
 
     .card {
-        flex: 1;
 
         flex-direction: column;
         height: $housing__card-height;
-        min-width: $housing__card-minwidth;
+        //height: $housing__card-height;
+        //min-width: $housing__card-minwidth;
     }
 
     .card__image {
@@ -39,12 +45,13 @@
     .card__body {
         height: $housing__card__body-height;
         background-color: white;
-        padding: 0.2em 0.5em 0 0.5em;
+        padding: 0 0.5em;
 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
+        row-gap: $housing__card_body-gap;
 
         .price {
             font-weight: bold;
@@ -90,6 +97,7 @@
 
         .card {
             min-height: $housing__card-minheight--smalldevice;
+            flex-basis: 100%;
         }
 
     }

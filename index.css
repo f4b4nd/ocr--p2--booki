@@ -400,17 +400,18 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  row-gap: 20px;
-  max-width: 1200px;
+  row-gap: 1em;
 }
 
 .container-housing h3 {
-  margin: 10px 10px;
+  margin: 0 0.2em;
+  font-size: 2em;
 }
 
 .container-housing .more-link {
+  font-size: 1.2em;
   font-weight: bold;
-  margin: 15px 10px;
+  margin: 0.2em;
 }
 
 .container-housing .more-link:hover {
@@ -418,23 +419,23 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-housing .cards {
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border: 1px solid black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 1em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .container-housing .card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 240px;
-  min-width: 250px;
+  height: 22vw;
 }
 
 .container-housing .card__image {
@@ -444,9 +445,9 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-housing .card__body {
-  height: 60px;
+  height: 5em;
   background-color: white;
-  padding: 0.2em 0.5em 0 0.5em;
+  padding: 0 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,9 +458,10 @@ form.searchform input::-moz-placeholder {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 0.2em;
 }
 
 .container-housing .card__body .price {
@@ -492,6 +494,8 @@ form.searchform input::-moz-placeholder {
 @media screen and (max-width: 767px) {
   .container-housing .card {
     min-height: 300px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -588,6 +592,8 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container-activity .cards__group {
@@ -637,7 +643,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 3em;
+  height: 2.5em;
   padding-left: 0.5em;
 }
 
@@ -724,6 +730,12 @@ form.searchform input::-moz-placeholder {
   border-radius: 10px;
 }
 
+.container-popular {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .container-activity {
   padding: 1em;
 }
@@ -761,8 +773,6 @@ form.searchform input::-moz-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .cards .card {
