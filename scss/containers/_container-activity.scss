@@ -1,16 +1,20 @@
 .container-activity {
 
     h3 {
-        margin-left: 20px;
+        font-size: 2em;
     }
 
     .cards {
-        column-gap: 25px;
+        column-gap: $activity__gap;
         justify-content: center;
-        row-gap: 0 !important;
+        //row-gap: 0 !important;
+        //border: 1px solid black;
     }
 
     .cards__group {
+        //border: 1px solid red;
+        flex: 1;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -21,7 +25,7 @@
     .card {        
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 25px;
+        //margin-bottom: 15px;
     }
 
     .card__image {
@@ -35,8 +39,12 @@
         justify-content: center;
         
         height: $activity__card__body-height;
-        padding-left: 8px;
-        font-size: 1em !important;
+        //flex-basis: 30%;
+        padding-left: 0.5em;
+
+        .card__title {
+            font-size: 1.2em;
+        }
     }
 
 }
@@ -50,8 +58,10 @@
         }
 
         .cards__group {
-            flex-basis: 22%;     
-            max-width: $activity__cards__group-maxwidth--largedevice;      
+            flex-basis: 22%;
+            max-height: $activity__cards__group-maxheight--largedevice;
+            //max-width : 22vw;
+            //max-width: $activity__cards__group-maxwidth--largedevice;
         }
     }
 }
@@ -59,6 +69,11 @@
 /**MEDIUM DEVICES ONLY !! **/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .container-activity {        
+
+        .cards {
+            row-gap: $activity__gap;
+        }
+
         .cards__group {
             flex-basis: 45%;
         }
@@ -75,6 +90,7 @@
 
         .card:first-child:not(:only-child) {
             flex-basis: 65%;
+            margin-bottom: $activity__gap;
         }
         
         .card:last-child:not(:only-child) {
@@ -95,12 +111,13 @@
 
         .cards__group {
             max-height: $activity__cards__group-maxheight--smalldevice;
-            max-width: $activity__cards__group-maxwidth--smalldevice;
-            margin: auto;
+            //max-width: $activity__cards__group-maxwidth--smalldevice;
+            //margin: auto;
         }
 
         .card {
             height: $activity__cards__group-maxheight--smalldevice / 2 ;
+            margin-bottom: $activity__gap;
         }       
     }
 }

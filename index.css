@@ -579,19 +579,21 @@ form.searchform input::-moz-placeholder {
 /**MEDIUM DEVICES**/
 /**SMALL DEVICES**/
 .container-activity h3 {
-  margin-left: 20px;
+  font-size: 2em;
 }
 
 .container-activity .cards {
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 0 !important;
 }
 
 .container-activity .cards__group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +604,7 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .container-activity .card {
@@ -613,7 +615,6 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
 }
 
 .container-activity .card__image {
@@ -636,9 +637,12 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40px;
-  padding-left: 8px;
-  font-size: 1em !important;
+  height: 3em;
+  padding-left: 0.5em;
+}
+
+.container-activity .card__body .card__title {
+  font-size: 1.2em;
 }
 
 /** LARGE DEVICES ONLY !! **/
@@ -651,12 +655,15 @@ form.searchform input::-moz-placeholder {
   .container-activity .cards__group {
     -ms-flex-preferred-size: 22%;
         flex-basis: 22%;
-    max-width: 300px;
+    max-height: 32vw;
   }
 }
 
 /**MEDIUM DEVICES ONLY !! **/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-activity .cards {
+    row-gap: 1em;
+  }
   .container-activity .cards__group {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
@@ -672,6 +679,7 @@ form.searchform input::-moz-placeholder {
   .container-activity .card:first-child:not(:only-child) {
     -ms-flex-preferred-size: 65%;
         flex-basis: 65%;
+    margin-bottom: 1em;
   }
   .container-activity .card:last-child:not(:only-child) {
     -ms-flex-preferred-size: 35%;
@@ -689,11 +697,10 @@ form.searchform input::-moz-placeholder {
   }
   .container-activity .cards__group {
     max-height: 500px;
-    max-width: 500px;
-    margin: auto;
   }
   .container-activity .card {
     height: 250px;
+    margin-bottom: 1em;
   }
 }
 
@@ -756,7 +763,6 @@ form.searchform input::-moz-placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 20px;
 }
 
 .cards .card {
