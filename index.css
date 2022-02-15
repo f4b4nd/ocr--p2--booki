@@ -393,14 +393,21 @@ form.searchform input::-moz-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   row-gap: 1em;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
 }
 
 .container-housing h3 {
@@ -419,6 +426,8 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-housing .cards {
+  padding: 0 !important;
+  margin: 0 !important;
   border: 1px solid black;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -428,6 +437,8 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-preferred-size: fit-content !important;
+      flex-basis: fit-content !important;
 }
 
 .container-housing .card {
@@ -474,8 +485,8 @@ form.searchform input::-moz-placeholder {
     background-color: #F2F2F2;
   }
   .container-housing .card {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
   }
 }
 
@@ -538,14 +549,14 @@ form.searchform input::-moz-placeholder {
 .container-popular .card {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 150px;
-  max-width: 600px;
+  height: 10em;
+  max-width: 22vw;
   min-width: 320px;
 }
 
 .container-popular .card__image {
-  height: 150px;
-  width: 150px;
+  height: 10em;
+  width: 10em;
 }
 
 .container-popular .card__body {
@@ -714,11 +725,11 @@ form.searchform input::-moz-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
   row-gap: 15px;
   margin: 0;
   padding: 0;
@@ -726,14 +737,7 @@ form.searchform input::-moz-placeholder {
 
 .container-housing, .container-popular {
   margin: 0;
-  padding: 1em;
   border-radius: 10px;
-}
-
-.container-popular {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .container-activity {
@@ -746,6 +750,14 @@ form.searchform input::-moz-placeholder {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .container-housing {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .container-popular {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
   }
 }
 

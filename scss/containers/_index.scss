@@ -5,9 +5,10 @@
 .jumbotron {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
-    column-gap: 15px;
+    //column-gap: 15px;
     row-gap: 15px;
 
     margin: 0;
@@ -17,12 +18,18 @@
 
 .container-housing, .container-popular {
     margin: 0;
-    padding: 1em;
+    //padding: 1em;
     border-radius: 10px;
 }
 
+
+.container-housing {
+    //flex-basis: 60%;
+    //flex: 40%;
+}
+
 .container-popular {
-    flex: 1;
+    //flex-basis: 30%;
 }
 
 .container-activity {
@@ -35,6 +42,14 @@
 
     .jumbotron {
         align-items: flex-start;
+    }
+
+    .container-housing {
+        flex-basis: 60%;
+    }
+
+    .container-popular {
+        flex-basis: 33%;
     }
 }
 

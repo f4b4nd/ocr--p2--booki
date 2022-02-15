@@ -1,11 +1,13 @@
 .container-housing {
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: flex-start;
     row-gap: $housing__gap;
-
-    //max-width: $housing__container-maxwidth;
+    column-gap: $housing__gap;
+    flex-basis: auto !important;
 
     h3 {
         margin: 0 $housing__margin;
@@ -23,15 +25,24 @@
     }
 
     .cards {
+        padding: 0 !important;
+        margin: 0 !important;
         border: 1px solid black;
         flex-wrap: wrap;
         column-gap: $housing__gap;
         row-gap : $housing__gap;
         justify-content: flex-start;
+        //flex: 0;
+
+        //flex-grow: 0;
+        //flex-shrink: 0;
+        flex-wrap: wrap;
+        flex-basis: auto !important;
     }
 
-    .card {
 
+    .card {
+        flex-grow: 1;
         flex-direction: column;
         height: $housing__card-height;
         //height: $housing__card-height;
@@ -70,7 +81,8 @@
         background-color: $light-grey;
 
         .card {
-            flex-basis: 30%;
+            flex-basis: 33% - $housing__gap;
+            //width: 33%;
         }
 
     }
