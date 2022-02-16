@@ -57,11 +57,17 @@
 
     .card__title {
         margin-bottom: 1em;
-        
+        font-size: 1.5em;
+
         span.linebreak {
             display: block;
         }
     }
+
+    .card__subtitle {
+        font-size: 0.8em;
+    }
+
 
     .card__rating {
         margin-top: auto;
@@ -69,20 +75,3 @@
 
 }
 
-
-
-/**LARGE DEVICES**/
-@media screen and (min-width: $breakpoint__large-minwidth) {
-
-}
-
-/**MEDIUM DEVICES**/
-@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
-
-
-}
-
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth) {
-
-}

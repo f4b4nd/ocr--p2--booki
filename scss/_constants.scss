@@ -16,21 +16,20 @@ $border-radius-form: 10px;
 $border-radius-filter: 30px;
 
 // BREAKPOINTS
-$breakpoint__large-minwidth : 992px;
-$breakpoint__medium-minwidth : 768px;
-$breakpoint__medium-maxwidth : $breakpoint__large-minwidth - 1px;
-$breakpoint_small-maxwidth : $breakpoint__medium-minwidth - 1px;
+$largescreen-minwidth : 992px;
+$mediumscreen-minwidth : 768px;
+$mediumscreen-maxwidth : $largescreen-minwidth - 1px;
+$smallscreen-maxwidth : $mediumscreen-minwidth - 1px;
 
 
 // CARDS SIZE : HOUSING
 $housing__h3__margin: 0 0.2em;
 $housing__gap: 1em;
+$housing__card_body-gap: 0.2em;
+$housing__card-minheight: 250px;
 $housing__card-maxheight: 22vw;
 $housing__card-minheight--smalldevice: 300px;
-$housing__card__body-height: 4em;
-$housing__card_body-gap: 0.2em;
-//$housing__card-minwidth: 250px;
-//$housing__container-maxwidth: 1200px;
+$housing__card__body-height: 5em;
 
 
 // CARDS SIZE : POPULAR
@@ -38,8 +37,7 @@ $popular__h3__margin: 0 0.2em;
 $popular__gap: 1em;
 $popular__card__image-size: 12vw;
 $popular__card__image-minsize: 120px;
-//$popular__card-minwidth: 320px;
-//$popular__card-maxwidth: 600px;
+
 
 
 // CARDS SIZE : ACTIVITY
@@ -47,6 +45,12 @@ $activity__gap: 1em;
 $activity__cards__group-maxheight--largedevice: 32vw;
 $activity__cards__group-maxheight--smallmediumdevice: 500px;
 $activity__card__body-height: 2.5em;
+
+
+//$housing__card-minwidth: 250px;
+//$housing__container-maxwidth: 1200px;
+//$popular__card-minwidth: 320px;
+//$popular__card-maxwidth: 600px;
 //$activity__cards__group-maxwidth--largedevice: 300px;
 //$activity__cards__group-maxwidth--smalldevice: 500px;
 //$activity__cards__group-maxheight: 500px;

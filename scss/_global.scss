@@ -15,7 +15,7 @@ button {
 }
 
 // LARGE + MEDIUM
-@media screen and (min-width: $breakpoint__medium-minwidth) {
+@media screen and (min-width: $mediumscreen-minwidth) {
 
     main {
         padding: 2em;

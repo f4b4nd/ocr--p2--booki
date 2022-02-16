@@ -38,8 +38,8 @@
 }
 
 
-/**LARGE DEVICES**/
-@media screen and (min-width: $breakpoint__large-minwidth) {
+// LARGE DEVICES
+@media screen and (min-width: $largescreen-minwidth) {
 
     .jumbotron {
         align-items: flex-start;
@@ -55,8 +55,8 @@
     }
 }
 
-/**MEDIUM DEVICES**/
-@media screen and (min-width: $breakpoint__medium-minwidth ) and (max-width: $breakpoint__medium-maxwidth ) {
+// MEDIUM DEVICES 
+@media screen and (min-width: $mediumscreen-minwidth ) and (max-width: $mediumscreen-maxwidth ) {
 
     .jumbotron {
         flex-direction: column-reverse;
@@ -64,8 +64,8 @@
 
 }
 
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth ) {
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth ) {
 
     .jumbotron {
         flex-direction: column-reverse;

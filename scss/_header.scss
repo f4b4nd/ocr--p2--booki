@@ -42,8 +42,8 @@ header {
 }
 
 
-/** LARGE + MEDIUM DEVICES**/
-@media screen and (min-width: $breakpoint__medium-minwidth) {
+// LARGE + MEDIUM DEVICES
+@media screen and (min-width: $mediumscreen-minwidth) {
 
     header {
         justify-content: space-between;
@@ -66,8 +66,8 @@ header {
 }
 
 
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth) {
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth) {
 
     header {
         flex-direction: column;

@@ -36,8 +36,8 @@ footer {
 }
 
 
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth) {
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth) {
 
     footer {
         flex-direction: column;

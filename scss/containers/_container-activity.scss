@@ -42,10 +42,18 @@
         }
     }
 
+    .card__title {
+        font-size: 1.2em;
+    }
+
+    .card__subtitle {
+        font-size: 0.8em;
+    }
+
 }
 
-/** LARGE DEVICES ONLY !! **/
-@media screen and (min-width: $breakpoint__large-minwidth) {
+// LARGE DEVICES ONLY !! 
+@media screen and (min-width: $largescreen-minwidth) {
     .container-activity {
 
         .cards {
@@ -59,8 +67,8 @@
     }
 }
 
-/**MEDIUM DEVICES ONLY !! **/
-@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
+// MEDIUM DEVICES ONLY !! 
+@media screen and (min-width: $mediumscreen-minwidth) and (max-width: $mediumscreen-maxwidth) {
     .container-activity {        
 
         .cards {
@@ -75,8 +83,8 @@
     }
 }
 
-/** LARGE + MEDIUM DEVICES**/
-@media screen and (min-width: $breakpoint__medium-minwidth) {
+// LARGE + MEDIUM DEVICES
+@media screen and (min-width: $mediumscreen-minwidth) {
     .container-activity {
         
         .card:only-child {
@@ -95,8 +103,8 @@
 
 }
 
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth) {
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth) {
     .container-activity {
 
 

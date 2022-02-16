@@ -59,20 +59,20 @@
 }
 
 
-/**LARGE DEVICES**/
-@media screen and (min-width: $breakpoint__large-minwidth) {
+// LARGE DEVICES
+@media screen and (min-width: $largescreen-minwidth) {
 
 }
 
-/**MEDIUM DEVICES**/
-@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
+// MEDIUM DEVICES
+@media screen and (min-width: $mediumscreen-minwidth) and (max-width: $mediumscreen-maxwidth) {
     .container-filters {
         flex-direction: column;
     }
 }
 
-/**SMALL DEVICES**/
-@media screen and (max-width: $breakpoint_small-maxwidth) {
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth) {
     .container-filters {
         flex-direction: column;
     }
