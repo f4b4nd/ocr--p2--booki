@@ -1,3 +1,7 @@
+/*******************
+***** POPULAR ******
+*******************/
+
 .container-popular {
 
     display: flex;
@@ -29,10 +33,6 @@
 
     .card {        
         flex: 1;
-        //flex-basis: 100%;
-        //height: $popular__card-height;
-        //max-width: $popular__card-maxwidth;
-        //min-width: $popular__card-minwidth;
     }
 
     .card__image {
@@ -68,10 +68,39 @@
         font-size: 1em;
     }
 
-
     .card__rating {
         margin-top: auto;
     }
 
 }
 
+// MEDIUM DEVICES
+@media screen and (min-width: $mediumscreen-minwidth) and (max-width: $mediumscreen-maxwidth) {
+
+    .container-popular {
+
+        .card__image {
+            flex-basis: 30%;
+            height: $popular__card__image-height--smallmediumdevice;
+        }
+        .card__body {
+            justify-content: space-evenly;
+        }
+
+        .card__rating {
+            margin: 0;
+        }
+    }
+}
+
+// SMALL + MEDIUM DEVICES
+@media screen and (max-width: $mediumscreen-maxwidth) {
+
+    .container-popular {
+
+        .card__image {
+            height: $popular__card__image-size--smallmediumdevice;
+            width: $popular__card__image-size--smallmediumdevice;
+        }
+    }
+}
