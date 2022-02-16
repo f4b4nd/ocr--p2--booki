@@ -45,7 +45,7 @@
 }
 
 /** LARGE DEVICES ONLY !! **/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $breakpoint__large-minwidth) {
     .container-activity {
 
         .cards {
@@ -60,7 +60,7 @@
 }
 
 /**MEDIUM DEVICES ONLY !! **/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
     .container-activity {        
 
         .cards {
@@ -76,7 +76,7 @@
 }
 
 /** LARGE + MEDIUM DEVICES**/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint__medium-minwidth) {
     .container-activity {
         
         .card:only-child {
@@ -96,7 +96,7 @@
 }
 
 /**SMALL DEVICES**/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint_small-maxwidth) {
     .container-activity {
 
 

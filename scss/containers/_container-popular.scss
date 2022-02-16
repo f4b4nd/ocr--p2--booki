@@ -12,21 +12,24 @@
         align-items: flex-start;
 
         h3 {
-            margin: 15px 0;
+            margin: $popular__h3__margin;
+            font-size: 2em;
         }
     }
 
     .cards {
-        justify-content: center;
+        flex: 1;
         flex-wrap: wrap;
+
         flex-direction: column;
+        justify-content: space-evenly;
         row-gap: $popular__gap;
-        border: 1px solid red;
+        //border: 1px solid red;
     }
 
     .card {
-        flex-basis: 100%;
-        flex: 1;
+        //flex-basis: 100%;
+        //flex: 1;
         //height: $popular__card-height;
         //max-width: $popular__card-maxwidth;
         //min-width: $popular__card-minwidth;
@@ -37,13 +40,14 @@
         width: $popular__card__image-size;
         min-height: $popular__card__image-minsize;
         min-width: $popular__card__image-minsize;
+        border-top-right-radius: 0 !important;
     }
 
     .card__body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 10px 1em;
+        padding: 0.1em 1em;
         flex: 1; 
 
         .price {
@@ -68,17 +72,17 @@
 
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $breakpoint__large-minwidth) {
 
 }
 
 /**MEDIUM DEVICES**/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
 
 
 }
 
 /**SMALL DEVICES**/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint_small-maxwidth) {
 
 }

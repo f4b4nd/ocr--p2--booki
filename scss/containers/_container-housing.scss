@@ -3,21 +3,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
-    row-gap: $housing__gap;
-    column-gap: $housing__gap;
-    //flex-basis: auto !important;
+    gap: $housing__gap;
 
     h3 {
-        margin: 0 $housing__margin;
+        margin: $housing__h3__margin;
         font-size: 2em;
     }
 
     .more-link {
         font-size: 1.2em;
         font-weight: bold;
-        margin: $housing__margin;
+        margin: $housing__h3__margin;
 
         &:hover {
             text-decoration: underline;
@@ -27,10 +25,9 @@
     .cards {
         //padding: 0 !important;
         //margin: 0 !important;
-        border: 1px solid black;
+        //border: 1px solid black;
         flex-wrap: wrap;
-        column-gap: $housing__gap;
-        row-gap : $housing__gap;
+        gap: $housing__gap;
         //justify-content: flex-start;
         //flex: 0;
         //flex-grow: 0;
@@ -55,7 +52,7 @@
     .card__body {
         height: $housing__card__body-height;
         background-color: white;
-        padding: 0 0.5em;
+        padding: 0 0.8em;
 
         display: flex;
         flex-direction: column;
@@ -74,7 +71,7 @@
 
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $breakpoint__large-minwidth) {
 
     .container-housing {
         background-color: $light-grey;
@@ -89,7 +86,7 @@
 }
 
 /**MEDIUM DEVICES**/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: $breakpoint__medium-minwidth) and (max-width: $breakpoint__medium-maxwidth) {
 
     .container-housing {
         background-color: $light-grey;
@@ -103,7 +100,7 @@
 }
 
 /**SMALL DEVICES**/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint_small-maxwidth) {
     .container-housing {
 
         .card {

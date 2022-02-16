@@ -235,7 +235,7 @@ form.searchform input::-moz-placeholder {
 }
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .searchform__button .icon {
     display: none;
   }
@@ -399,15 +399,13 @@ form.searchform input::-moz-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  row-gap: 1em;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
+  gap: 1em;
 }
 
 .container-housing h3 {
@@ -418,7 +416,7 @@ form.searchform input::-moz-placeholder {
 .container-housing .more-link {
   font-size: 1.2em;
   font-weight: bold;
-  margin: 0.2em;
+  margin: 0 0.2em;
 }
 
 .container-housing .more-link:hover {
@@ -426,12 +424,9 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-housing .cards {
-  border: 1px solid black;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  row-gap: 1em;
+  gap: 1em;
 }
 
 .container-housing .card {
@@ -454,7 +449,7 @@ form.searchform input::-moz-placeholder {
 .container-housing .card__body {
   height: 4em;
   background-color: white;
-  padding: 0 0.5em;
+  padding: 0 0.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,7 +471,7 @@ form.searchform input::-moz-placeholder {
 }
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .container-housing {
     background-color: #F2F2F2;
   }
@@ -531,29 +526,24 @@ form.searchform input::-moz-placeholder {
 }
 
 .container-popular .container__header h3 {
-  margin: 15px 0;
+  margin: 0 0.2em;
+  font-size: 2em;
 }
 
 .container-popular .cards {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   row-gap: 1em;
-  border: 1px solid red;
-}
-
-.container-popular .card {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .container-popular .card__image {
@@ -561,6 +551,7 @@ form.searchform input::-moz-placeholder {
   width: 12vw;
   min-height: 120px;
   min-width: 120px;
+  border-top-right-radius: 0 !important;
 }
 
 .container-popular .card__body {
@@ -572,7 +563,7 @@ form.searchform input::-moz-placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
-  padding: 10px 1em;
+  padding: 0.1em 1em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -666,7 +657,7 @@ form.searchform input::-moz-placeholder {
 }
 
 /** LARGE DEVICES ONLY !! **/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .container-activity .cards {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
@@ -732,12 +723,18 @@ form.searchform input::-moz-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
   margin: 0;
   padding: 0;
 }
 
 .container-housing, .container-popular {
   margin: 0;
+  padding: 1em;
   border-radius: 10px;
 }
 
@@ -746,7 +743,7 @@ form.searchform input::-moz-placeholder {
 }
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .jumbotron {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -829,16 +826,13 @@ form.searchform input::-moz-placeholder {
 }
 
 .cards .card__title {
-  font-size: 15px;
+  font-size: 1.2em;
 }
 
 .cards .card__subtitle {
-  font-size: 14px;
+  font-size: 0.8em;
 }
 
-/**LARGE DEVICES**/
-/**MEDIUM DEVICES**/
-/**SMALL DEVICES**/
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
   color: #0065FC;
   font-size: 20px;
@@ -846,7 +840,7 @@ form.searchform input::-moz-placeholder {
 
 .fas.fa-star {
   color: #0065FC;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .fas.fa-star.star--empty {

@@ -15,10 +15,15 @@ $border-radius-card: 12px;
 $border-radius-form: 10px;
 $border-radius-filter: 30px;
 
+// BREAKPOINTS
+$breakpoint__large-minwidth : 992px;
+$breakpoint__medium-minwidth : 768px;
+$breakpoint__medium-maxwidth : $breakpoint__large-minwidth - 1px;
+$breakpoint_small-maxwidth : $breakpoint__medium-minwidth - 1px;
 
 
 // CARDS SIZE : HOUSING
-$housing__margin: 0.2em;
+$housing__h3__margin: 0 0.2em;
 $housing__gap: 1em;
 $housing__card-maxheight: 22vw;
 $housing__card-minheight--smalldevice: 300px;
@@ -29,6 +34,7 @@ $housing__card_body-gap: 0.2em;
 
 
 // CARDS SIZE : POPULAR
+$popular__h3__margin: 0 0.2em;
 $popular__gap: 1em;
 $popular__card__image-size: 12vw;
 $popular__card__image-minsize: 120px;

@@ -73,7 +73,7 @@ form.searchform {
 
 
 /**LARGE DEVICES**/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $breakpoint__large-minwidth) {
 
     .searchform__button .icon {
         display: none;        
@@ -82,7 +82,7 @@ form.searchform {
 }
 
  /** SMALL + MEDIUM DEVICES**/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $breakpoint__medium-maxwidth) {
 
     .searchform {
         width: 100%;
