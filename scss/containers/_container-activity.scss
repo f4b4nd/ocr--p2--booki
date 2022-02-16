@@ -17,7 +17,6 @@
         flex-direction: column;
         justify-content: space-between;
         
-        max-height: $activity__cards__group-maxheight;
     }
 
     .card {        
@@ -70,6 +69,8 @@
 
         .cards__group {
             flex-basis: 45%;
+            max-height: $activity__cards__group-maxheight--smallmediumdevice;
+
         }
     }
 }
@@ -104,11 +105,11 @@
         }
 
         .cards__group {
-            max-height: $activity__cards__group-maxheight--smalldevice;
+            max-height: $activity__cards__group-maxheight--smallmediumdevice;
         }
 
         .card {
-            height: $activity__cards__group-maxheight--smalldevice / 2 ;
+            height: $activity__cards__group-maxheight--smallmediumdevice / 2 ;
             margin-bottom: $activity__gap;
         }       
     }

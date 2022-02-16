@@ -20,23 +20,27 @@ $border-radius-filter: 30px;
 // CARDS SIZE : HOUSING
 $housing__margin: 0.2em;
 $housing__gap: 1em;
-//$housing__container-maxwidth: 1200px;
-$housing__card-height: 22vw;
-//$housing__card-minwidth: 250px;
+$housing__card-maxheight: 22vw;
 $housing__card-minheight--smalldevice: 300px;
-$housing__card__body-height: 5em;
+$housing__card__body-height: 4em;
 $housing__card_body-gap: 0.2em;
+//$housing__card-minwidth: 250px;
+//$housing__container-maxwidth: 1200px;
+
 
 // CARDS SIZE : POPULAR
-$popular__card-height: 10em;
-$popular__card-maxwidth: 22vw;
-$popular__card-minwidth: 320px;
+$popular__gap: 1em;
+$popular__card__image-size: 12vw;
+$popular__card__image-minsize: 120px;
+//$popular__card-minwidth: 320px;
+//$popular__card-maxwidth: 600px;
+
 
 // CARDS SIZE : ACTIVITY
 $activity__gap: 1em;
-$activity__cards__group-maxheight: 500px;
 $activity__cards__group-maxheight--largedevice: 32vw;
+$activity__cards__group-maxheight--smallmediumdevice: 500px;
+$activity__card__body-height: 2.5em;
 //$activity__cards__group-maxwidth--largedevice: 300px;
 //$activity__cards__group-maxwidth--smalldevice: 500px;
-$activity__cards__group-maxheight--smalldevice: 500px;
-$activity__card__body-height: 2.5em;
+//$activity__cards__group-maxheight: 500px;

@@ -2,7 +2,7 @@
 
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: $popular__gap;
     
     background-color: $light-grey;
 
@@ -19,19 +19,24 @@
     .cards {
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: $popular__gap;
+        border: 1px solid red;
     }
 
     .card {
         flex-basis: 100%;
-
-        height: $popular__card-height;
-        max-width: $popular__card-maxwidth;
-        min-width: $popular__card-minwidth;
+        flex: 1;
+        //height: $popular__card-height;
+        //max-width: $popular__card-maxwidth;
+        //min-width: $popular__card-minwidth;
     }
-        
+
     .card__image {
-        height: $popular__card-height;
-        width: $popular__card-height;
+        height: $popular__card__image-size;
+        width: $popular__card__image-size;
+        min-height: $popular__card__image-minsize;
+        min-width: $popular__card__image-minsize;
     }
 
     .card__body {
@@ -47,7 +52,7 @@
     }
 
     .card__title {
-        margin-bottom: 10px;
+        margin-bottom: 1em;
         
         span.linebreak {
             display: block;

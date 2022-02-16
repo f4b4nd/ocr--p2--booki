@@ -5,11 +5,10 @@
 .jumbotron {
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-
+    //flex-wrap: wrap;
     //column-gap: 15px;
-    row-gap: 15px;
+    //row-gap: 15px;
 
     margin: 0;
     padding: 0;
@@ -42,14 +41,15 @@
 
     .jumbotron {
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .container-housing {
-        flex-basis: 60%;
+        flex: 1;
     }
 
     .container-popular {
-        flex-basis: 33%;
+       flex-basis: 32%;
     }
 }
 
@@ -68,6 +68,5 @@
     .jumbotron {
         flex-direction: column-reverse;
     }
-
 
 }
