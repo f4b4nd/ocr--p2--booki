@@ -1,4 +1,6 @@
-/*RESET*/
+/*******************
+***** RESET ******
+*******************/
 html, body {
   margin: 0;
   padding: 0;
@@ -80,6 +82,9 @@ h4 {
   }
 }
 
+/*******************
+***** HEADER *******
+*******************/
 header {
   display: flex;
   margin-bottom: 15px;
@@ -165,6 +170,9 @@ header .top-navigation li:hover a {
   }
 }
 
+/*******************
+***** SEARCHFORM ***
+*******************/
 .container-searchform {
   padding: 1em 0;
 }
@@ -250,6 +258,9 @@ form.searchform input::-moz-placeholder {
   }
 }
 
+/*******************
+***** RESULTS ******
+*******************/
 .container-results .results__icon {
   display: inline-flex;
   justify-content: center;
@@ -271,6 +282,9 @@ form.searchform input::-moz-placeholder {
   margin-left: 5px;
 }
 
+/*******************
+***** FILTERS ******
+*******************/
 .container-filters {
   display: flex;
   column-gap: 20px;
@@ -498,7 +512,6 @@ form.searchform input::-moz-placeholder {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container-popular .card__image {
     flex-basis: 30%;
-    height: 200px;
   }
   .container-popular .card__body {
     justify-content: space-evenly;
@@ -515,6 +528,9 @@ form.searchform input::-moz-placeholder {
   }
 }
 
+/*******************
+***** ACTIVIVTY ****
+*******************/
 .container-activity h3 {
   font-size: 2em;
 }
@@ -608,6 +624,9 @@ form.searchform input::-moz-placeholder {
   }
 }
 
+/*******************
+***** JUMBOTRON ******
+*******************/
 .jumbotron {
   display: flex;
   justify-content: space-between;
@@ -653,6 +672,9 @@ form.searchform input::-moz-placeholder {
   }
 }
 
+/*******************
+***** CARDS ******
+*******************/
 .cards {
   display: flex;
 }
@@ -687,6 +709,9 @@ form.searchform input::-moz-placeholder {
   /* Webkit (non-standard naming) */
 }
 
+/*******************
+***** ICONS ******
+*******************/
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
   color: #0065FC;
   font-size: 20px;
@@ -705,6 +730,9 @@ form.searchform input::-moz-placeholder {
   font-size: 30px;
 }
 
+/*******************
+***** FOOTER ****
+*******************/
 footer {
   display: flex;
   flex-wrap: wrap;
