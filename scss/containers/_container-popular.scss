@@ -27,16 +27,16 @@
         //border: 1px solid red;
     }
 
-    .card {
+    .card {        
+        flex: 1;
         //flex-basis: 100%;
-        //flex: 1;
         //height: $popular__card-height;
         //max-width: $popular__card-maxwidth;
         //min-width: $popular__card-minwidth;
     }
 
     .card__image {
-        height: $popular__card__image-size;
+        //height: $popular__card__image-size;
         width: $popular__card__image-size;
         min-height: $popular__card__image-minsize;
         min-width: $popular__card__image-minsize;
@@ -56,8 +56,8 @@
     }
 
     .card__title {
-        margin-bottom: 1em;
-        font-size: 1.5em;
+        //margin-bottom: 0.5em;
+        font-size: 1.2em;
 
         span.linebreak {
             display: block;
@@ -65,7 +65,7 @@
     }
 
     .card__subtitle {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
 

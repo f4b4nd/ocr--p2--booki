@@ -1,3 +1,10 @@
+// BREAKPOINTS
+$largescreen-minwidth : 992px;
+$mediumscreen-minwidth : 768px;
+$mediumscreen-maxwidth : $largescreen-minwidth - 1px;
+$smallscreen-maxwidth : $mediumscreen-minwidth - 1px;
+
+
 // COLORS
 $lighter-blue: #f0f2f5;
 
@@ -15,19 +22,13 @@ $border-radius-card: 12px;
 $border-radius-form: 10px;
 $border-radius-filter: 30px;
 
-// BREAKPOINTS
-$largescreen-minwidth : 992px;
-$mediumscreen-minwidth : 768px;
-$mediumscreen-maxwidth : $largescreen-minwidth - 1px;
-$smallscreen-maxwidth : $mediumscreen-minwidth - 1px;
-
 
 // CARDS SIZE : HOUSING
 $housing__h3__margin: 0 0.2em;
 $housing__gap: 1em;
 $housing__card_body-gap: 0.2em;
 $housing__card-minheight: 250px;
-$housing__card-maxheight: 22vw;
+$housing__card-maxheight: 15vw;
 $housing__card-minheight--smalldevice: 300px;
 $housing__card__body-height: 5em;
 
@@ -37,7 +38,6 @@ $popular__h3__margin: 0 0.2em;
 $popular__gap: 1em;
 $popular__card__image-size: 12vw;
 $popular__card__image-minsize: 120px;
-
 
 
 // CARDS SIZE : ACTIVITY

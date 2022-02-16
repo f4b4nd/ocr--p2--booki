@@ -14,10 +14,42 @@ button {
     }
 }
 
+h1 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 0;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+
 // LARGE + MEDIUM
 @media screen and (min-width: $mediumscreen-minwidth) {
 
     main {
         padding: 2em;
+    }
+}
+
+// SMALL DEVICES
+@media screen and (max-width: $smallscreen-maxwidth) {
+    .container-title, .container-filters, .container-results {
+        padding: 0 12px;
     }
 }

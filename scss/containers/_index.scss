@@ -9,7 +9,7 @@
     align-items: stretch !important;
     //flex-wrap: wrap;
     column-gap: 1.5em;
-    //row-gap: 15px;
+    row-gap: 1em;
 
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@
 }
 
 // MEDIUM DEVICES 
-@media screen and (min-width: $mediumscreen-minwidth ) and (max-width: $mediumscreen-maxwidth ) {
+@media screen and (min-width: $mediumscreen-minwidth) and (max-width: $mediumscreen-maxwidth) {
 
     .jumbotron {
         flex-direction: column-reverse;
@@ -65,7 +65,7 @@
 }
 
 // SMALL DEVICES
-@media screen and (max-width: $smallscreen-maxwidth ) {
+@media screen and (max-width: $smallscreen-maxwidth) {
 
     .jumbotron {
         flex-direction: column-reverse;
